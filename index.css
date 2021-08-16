@@ -1,7 +1,24 @@
-.navbar-nav {
-    margin-left: auto;
+.nav-item {
+    color: black;
+    font-weight: 900;
+    size: 15%;
 }
 
 #main-landing text {
     margin-right: 40%;
+}
+
+#main-landing {
+    background-image: url('mainlbg2.jpg');
+    height: 70vh;
+}
+
+#mainl-heading {
+    color: white;
+    font-weight: bolder;
+    size: 15%;
+}
+
+#mainl-text {
+    size: 25px;
 }
