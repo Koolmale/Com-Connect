@@ -1,24 +1,22 @@
-.nav-item {
+html,
+body,
+header,
+#intro {
+    height: 90%;
+}
+
+
+#intro {
+    background: url("mainlbg4.JPG")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#intro-text {
     color: black;
-    font-weight: 900;
-    size: 15%;
 }
 
-#main-landing text {
-    margin-right: 40%;
-}
 
-#main-landing {
-    background-image: url('mainlbg2.jpg');
-    height: 70vh;
-}
 
-#mainl-heading {
-    color: white;
-    font-weight: bolder;
-    size: 15%;
-}
-
-#mainl-text {
-    size: 25px;
-}

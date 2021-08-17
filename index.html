@@ -6,87 +6,102 @@
         <link rel="stylesheet" href="index.css">
         <link href="product.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
 
     <body>
         
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar" style=" height: 8vh;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img
                         src="/com_connect_font.png"
                         class="me-2"
-                        height="70"
+                        height="60vh"
                         alt=""
                         loading="lazy"
                         />
-                        <medium>Community Connector</medium>
+                        Community Connector
                     </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <i class="fas fa-bars"></i>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                     </button>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Help Us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              Past Projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              About
-                            </a>
-                        </li>
-                    </ul>
+
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <ul class="navbar-nav ml-auto smooth-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                Help Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                Past Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                About
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
             </nav>
 
-            <hr>
         
+            <div id="intro" class="view" style="padding-top: 5vh;">
 
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" id="main-landing">
-            <div class="col-md-5 p-lg-5 mx-auto my-5" id="mainl1">
-              <h1 class="display-3 font-weight-bold text" id="mainl-heading">Community Connector</h1>
-              <h4 class="font-weight-normal mainl-text">It's About Giving Now</h4>
-              <h4 class="font-weight-normal mainl-text">Connecting people to create a better community</h4>
-              <!--<a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+                <div class="mask rgba-black-strong">
+    
+                    <div class="container-fluid d-flex align-items-center justify-content-center h-100" >
+    
+                        <div class="row d-flex justify-content-center text-center">
+    
+                            <div class="col-md-10 align-middle" id="intro-text" data-aos="flip-up" data-aos-duration="1000">
+    
+                                <!-- Heading -->
+                                <h2 class="display-3 font-weight-bold black-text pt-5 mb-5">Community Connector</h2>
+    
+                                <!-- Divider -->
+                                <hr>
+    
+                                <!-- Description -->
+                                <h3 class="white-text my-4">Its About Giving Now</h3>
+                                <h4>Connecting people to create a better community</h4>
+                                <!--<button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button>-->
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
             </div>
-        </div>
 
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-            <div class="my-3 py-3">
-            <h2 class="display-5">What We Do</h2>
-            <p class="lead">We provide grocery services for free, for people all around the Bay Area. We also run many donation drives throughout the year aimed at assisting the </p>
+            <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white rounded-lg overflow-hidden" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="my-3 py-3 ">
+                <h2 class="display-5" data-aos="zoom-in">What We Do</h2>
+                <p class="lead">We provide grocery services for free, for people all around the Bay Area. We also run many donation drives throughout the year aimed at assisting the less fortunate.</p>
+                </div>
+
             </div>
-            <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                <img src="landing- pic1.JPG" />
+            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden rounded-lg" width="50%" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Our Mission</h2>
+                    <p class="lead">These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
+                </div>
             </div>
-        </div>
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" width="50%">
-            <div class="my-3 p-3">
-            <h2 class="display-5">Our Mission</h2>
-            <p class="lead">These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
-            </div>
-            <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                <img src="main-landing-bg.JPG"/>
-            </div>
-        </div>
-        </div>
+       </div>
 
 
         <footer class="bg-dark text-center text-white">          
@@ -96,9 +111,15 @@
             </div>
           </footer>
 
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        
        
     </body>
 </html>
