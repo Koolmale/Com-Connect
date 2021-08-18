@@ -1,22 +1,38 @@
 html,
 body,
-header,
-#intro {
+header {
     height: 90%;
+    width: 100%;
 }
 
+.navbar-brand,
+nav a {
+    font-size: 2.5vh;
+    font-weight: bold;
+}
 
 #intro {
-    background: url("mainlbg4.JPG")no-repeat center center fixed;
+    background: url("rita-vicari-m6RCv8K0rTM-unsplash.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
 }
 
 #intro-text {
-    color: black;
+    margin-top: 20vh;
+    color: white;
 }
+
+
+#mission p {
+    font-size: x-large;
+}
+
+
+
+
 
 
 

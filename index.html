@@ -10,11 +10,13 @@
 
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        <title>Community Connector</title>
+        <link rel="icon" href="com_connect_font.png" type="image/icon type">
     </head>
 
     <body>
         
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar" style=" height: 8vh;">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" data-aos="slide-down" data-aos-duration="1000" id="navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img
@@ -55,53 +57,157 @@
                 </div>
             </nav>
 
-        
-            <div id="intro" class="view" style="padding-top: 5vh;">
-
+           <div id="intro" class="view jumbotron jumbotron-fluid" style="padding-top: 5vh;" data-aos="zoom-in" data-aos-duration="500">
                 <div class="mask rgba-black-strong">
-    
                     <div class="container-fluid d-flex align-items-center justify-content-center h-100" >
-    
                         <div class="row d-flex justify-content-center text-center">
-    
-                            <div class="col-md-10 align-middle" id="intro-text" data-aos="flip-up" data-aos-duration="1000">
-    
-                                <!-- Heading -->
-                                <h2 class="display-3 font-weight-bold black-text pt-5 mb-5">Community Connector</h2>
-    
-                                <!-- Divider -->
+                            <div class="col-md-10 align-middle" id="intro-text" data-aos="zoom-in" data-aos-duration="1000">
+                                 
+                                <h2 class="display-3 font-weight-bold white-text pt-5 mb-5">Community Connector</h2>
+                                
                                 <hr>
-    
-                                <!-- Description -->
+                                
                                 <h3 class="white-text my-4">Its About Giving Now</h3>
                                 <h4>Connecting people to create a better community</h4>
-                                <!--<button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button>-->
-    
                             </div>
-    
                         </div>
-    
                     </div>
-    
                 </div>
-    
+            </div> 
+
+            <main style="margin-top: 10vh; margin-bottom: 15vh;">
+                <div class="container">
+                    <section id="mission" class="text-left"> 
+                        <div>
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <div class="px-2" >
+                                        <h4 class="display-3 text-center pb-3" data-aos="slide-up" data-aos-duration="1000">Our Mission</h4>
+                                        <p data-aos="slide-up" data-aos-duration="1750">These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-auto" data-aos="slide-up" data-aos-duration="2000" id="testimg">
+                                    <img src="katt-yukawa-K0E6E0a0R3A-unsplash.jpg" class="img-fluid shadow-lg rounded" alt="" style="height: 40vh; vertical-align: middle; margin-left: 5vw;">
+                                </div>
+                            </div>
+                      </div> 
+
+                        
+                        
+                    </section> 
+
+                </div>
+            </main>
+
+       <section id="services" class="container">
+        <h2 class="display-4 text-center mt-5" style="margin-bottom: 5vh;" data-aos="slide-up" data-aos-duration="1000">What We Do</h2>
+        
+        <div class="row text-center">
+           <div class="col-md-4 mb-4">
+              <div class="card h-100" data-aos="slide-up" data-aos-duration="1250">
+                <img class="card-img-top" src="austin.png" alt="Austin Fundraiser">                 
+                <div class="card-body">
+                    <h4 class="card-title">Fundraisers</h4>
+                    <p class="card-text">We run fundraisers throughout the year. Teaming with many youth groups and organizations we are able to support those in need. </p>
+                 </div>
+                 <div class="card-footer py-4">
+                    <a href="#" class="btn btn-secondary">See more &raquo;</a>
+                 </div>
+              </div>
+           </div>
+           
+           <div class="col-md-4 mb-4" data-aos="slide-up" data-aos-duration="1500">
+              <div class="card h-100">
+                 <img class="card-img-top" src="maria-lin-kim-8RaUEd8zD-U-unsplash.jpg" alt="Grocery">
+                 <div class="card-body">
+                    <h4 class="card-title">Grocery</h4>
+                       <p class="card-text">We know that Covid has impacted many people. With help from many volunteers we are and have been able to succesfully deliver groceries all over the Bay Area.</p>
+                 </div>
+                 <div class="card-footer py-4">
+                    <a href="#" class="btn btn-secondary">Volunteer &raquo;</a>
+                 </div>
+              </div>
+           </div>
+           
+           <div class="col-md-4 mb-4" data-aos="slide-up" data-aos-duration="1750">
+              <div class="card h-100">
+                 <img class="card-img-top" src="donate.JPG" alt="Donatex">
+                 <div class="card-body">
+                    <h4 class="card-title">Donate</h4>
+                    <p class="card-text">Donations go towards families that have been affected by the pandemic.</p>
+                 </div>
+                 <div class="card-footer py-4">
+                    <a href="#" class="btn btn-secondary">Donate Now &raquo;</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+     <!--WIP
+
+     <section id="examples" class="text-center">
+        <h2 class="font-weight-bold" style="margin-top: 10vh; margin-bottom: 10vh;">Some of Our Previous Projects!</h2>
+        <div class="row">
+            <div class="col-lg col-md mb-4">
+                <div class="view overlay">
+                    <img src="care package1" class="img-fluid" alt="" style="max-height: 40vh;">
+                    <div class="mask rgba-white-slight"></div>
+                </div>
+
+                <h4 class="my-4 font-weight-bold">Care Package Campaign</h4>
+                <p class="grey-text">Distributed care packages to hundreds of homeless in San Francisco.</p>
+
             </div>
 
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white rounded-lg overflow-hidden" data-aos="zoom-in-right" data-aos-duration="1000">
-                <div class="my-3 py-3 ">
-                <h2 class="display-5" data-aos="zoom-in">What We Do</h2>
-                <p class="lead">We provide grocery services for free, for people all around the Bay Area. We also run many donation drives throughout the year aimed at assisting the less fortunate.</p>
+            <div class="col-lg col-md mb-4">
+
+                <div class="view overlay z-depth-1-half">
+                    <img src="carepackage2" class="img-fluid" alt="" style="max-height: 40vh;">
+                    <div class="mask rgba-white-slight"></div>
                 </div>
 
+                <h4 class="my-4 font-weight-bold">Heading</h4>
+                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                    maiores nam,
+                    aperiam minima
+                    assumenda deleniti hic.</p>
+
             </div>
-            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden rounded-lg" width="50%" data-aos="zoom-in-left" data-aos-duration="1000">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Our Mission</h2>
-                    <p class="lead">These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg col-md mb-4">
+
+                <div class="view overlay z-depth-1-half">
+                    <img src="sportsdrive1" class="img-fluid" alt="" style="max-height: 40vh;">
+                    <div class="mask rgba-white-slight"></div>
                 </div>
+
+                <h4 class="my-4 font-weight-bold">Fundraiser for Orphanage</h4>
+                <p class="grey-text">Fundraised $3000 to buy sports equipment for an orphanage in Sri Lanka.</p>
+
             </div>
-       </div>
+
+            <div class="col-lg col-md mb-4">
+
+                <div class="view overlay z-depth-1-half">
+                    <img src="target1.jpg" class="img-fluid" alt="" style="max-height: 40vh;">
+                    <div class="mask rgba-white-slight"></div>
+                </div>
+
+                <h4 class="my-4 font-weight-bold">Gift Card Drive</h4>
+                <p class="grey-text">Fundraised and bought gift cards to give as an Eid gift to the less fortunate in the Bay Area.</p>
+
+            </div>
+
+        </div>
+     </section>-->
+
+
 
 
         <footer class="bg-dark text-center text-white">          
@@ -119,7 +225,19 @@
         <script>
             AOS.init();
         </script>
-        
+
+       <script>
+        $(document).ready(function(){
+        $(window).scroll(function() { 
+        if ($(document).scrollTop() > 1000) { 
+          $(".fixed-top").css("background-color", "rgba(213, 124, 61, 0.61)"); 
+        } else {
+          $(".fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+        }
+            });
+        })
+        </script>
        
+
     </body>
 </html>
