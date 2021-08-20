@@ -5,14 +5,28 @@ header {
     width: 100%;
 }
 
-.navbar-brand,
 nav a {
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: bold;
 }
 
+.navbar {
+    background-color: #404483;
+    height: 6vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    transition: top 1s ease-in-out;
+   }
+
+.navbar.hide {
+    transform: translate(0,-100);
+  }
+
 #intro {
-    background: url("rita-vicari-m6RCv8K0rTM-unsplash.jpg")no-repeat center center fixed;
+    background: url("tim-mossholder-bo3SHP58C3g-unsplash.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,6 +43,18 @@ nav a {
 #mission p {
     font-size: x-large;
 }
+
+.carousel {
+    max-height: 70vh;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.carousel-inner {
+    height: 70vh;
+}
+
+
 
 
 
