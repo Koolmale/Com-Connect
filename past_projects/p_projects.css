@@ -33,3 +33,13 @@ nav a {
     background-size: cover;
     height: 100vh;
 }
+
+.imgs {
+    height: 50rem;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
