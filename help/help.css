@@ -1,0 +1,49 @@
+html,
+body,
+header {
+    height: 90%;
+    width: 100%;
+}
+
+nav a {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #404483;
+    height: 6vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    transition: top 1s ease-in-out;
+   }
+
+.navbar.hide {
+    transform: translate(0,-100);
+  }
+
+  #p-landingimg {
+    background: url("landing-help.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.imgs {
+    height: 50rem;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#Iframe {
+    height: 50rem !important;
+}
