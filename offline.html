@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>You are offline!</title>
+  <meta charset="UTF-8">
+ 
+  <style>
+    body {
+      padding: 50px;
+    }
+    
+    #container {
+      background-color: #FFF;
+      text-align: center;
+    }
+    
+    #burger {
+      animation: bobble 2s infinite;
+      font-size: 60px;
+      margin-top: 0;
+    }
+    
+    @keyframes bobble {
+      0% {
+          transform: translateY(10px);
+      }
+      50% {
+          transform: translateY(40px);
+      }
+      100% {
+          transform: translateY(10px);
+      }
+    }
+    p {
+      font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+      text-align: center;
+      font-size: 20px;
+      color: #CCC;
+      line-height: 1.5;
+    }
+    p span {
+      font-weight: bold;
+      font-size: 24px;
+      color: #222;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+ 
+<body>
+<div id="container">
+  <p id="burger">🍔</p>
+  </div>
+<p><span>Your connection is currently offline!</span><br/>Watch this burger bouncing in the meantime.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  
+  
+<p><a href="https://www.kirupa.com">🗺️</a></p>
+</body>
+ 
+</html>

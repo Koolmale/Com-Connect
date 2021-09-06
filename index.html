@@ -12,6 +12,8 @@
 
         <title>Community Connector</title>
         <link rel="icon" href="./home/com_connect_font.png" type="image/icon type">
+
+        <link rel="manifest" href="/manifest.json">
     </head>
 
     <body>
@@ -263,6 +265,14 @@
             } 
 
         </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
        
 
     </body>
