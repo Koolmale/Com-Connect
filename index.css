@@ -5,6 +5,11 @@ header {
     width: 100%;
 }
 
+body {
+    overflow-x: hidden !important;
+}
+
+
 nav a {
     font-size: 2vh;
     font-weight: bold;
@@ -52,6 +57,56 @@ nav a {
 
 .carousel-inner img{
     max-height: 70vh;
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        max-width: 100% !important;
+    }
+
+    #intro {
+        max-width: 100% !important;
+    }
+    .navbar {
+        position: fixed !important;
+        height: 8vh !important;
+        max-width: 100%;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 2vh !important;
+    }
+
+    .navbar-brand img {
+        size: 30% !important;
+    }
+    .drop {
+        color: black !important;
+    }
+    .title1 {
+        font-size: x-large !important;
+    }
+
+    .subt1 {
+        font-size: large !important;
+    }
+    .testimg {
+        display: none;
+    }
+
+    .missiontxt {
+        text-align: center !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    #services {
+        max-width: 95% !important;
+    }
 }
 
 
