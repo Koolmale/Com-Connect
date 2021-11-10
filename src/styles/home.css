@@ -43,8 +43,40 @@
     font-size: 1.5rem;
 }
 
-#mission p {
-    font-size: x-large;
+.mission {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.mission-text-section {
+    flex-basis: 50%;
+    margin: 20px;
+    color: #212529;
+}
+
+.mission-text-section h4 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.mission-text-section p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;  
+}
+
+.mission-img-wrapper {
+    flex-basis: 40%;
+}
+
+.mission-img-wrapper img {
+    width: 100%;
+    flex-basis: 50%;
 }
 
 .carousel {

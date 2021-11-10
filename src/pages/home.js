@@ -1,4 +1,5 @@
 import '../styles/home.css'
+import MakeAChange from '../images/makeAChange.jpg'
 
 function Home() {
     return (
@@ -14,32 +15,20 @@ function Home() {
                 </div>
             </div> 
 
-            {/* <main>
-                <div class="container">
-                    <section id="mission" class="text-left"> 
-                        <div>
-                            <div class="row no-gutters missiontxt">
-                                <div class="col">
-                                    <div class="px-2" >
-                                        <h4 class="display-3 text-center pb-3 mission1" data-aos="slide-up" data-aos-duration="1000">Our Mission</h4>
-                                        <p data-aos="slide-up" data-aos-duration="1750" class="text-center">These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col text-center d-flex img1 mission1" data-aos="slide-up" data-aos-duration="2000" id="testimg">
-                                    <img src={MainBanner} class=" shadow-lg rounded testimg" alt=""  />
-                                </div>
-                            </div>
-                      </div> 
-
+            <main>
+                <section className="mission"> 
+                    <div className="mission-text-section">
+                        <h4>Our Mission</h4>
+                        <p>These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
+                    </div>
                         
-                        
-                    </section> 
-
-                </div>
+                    <div className="mission-img-wrapper">
+                        <img src={MakeAChange} alt=""  />
+                    </div>
+                </section>
             </main>
 
-       <section id="services" class="container">
+       {/* <section id="services" class="container">
         <h2 class="display-4 text-center mt-5" >What We Do</h2>
         
         <div class="row text-center">
