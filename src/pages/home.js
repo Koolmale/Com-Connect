@@ -1,11 +1,17 @@
 import '../styles/home.css'
+
 import MakeAChange from '../images/makeAChange.jpg'
+import AustinFlyer from '../images/austinFlyer.png'
+import Grocery from '../images/grocery.jpg'
+import Donate from '../images/donate.jpg'
+
+import ShowcaseCard from '../components/showcaseCard'
 
 function Home() {
     return (
         <div className='home body'>
             <div className="intro-background">
-                <div className="intro">
+                <div id="intro">
                     <h2>Community<br />Connector</h2>
                     
                     <hr />
@@ -16,7 +22,7 @@ function Home() {
             </div> 
 
             <main>
-                <section className="mission"> 
+                <section id="mission"> 
                     <div className="mission-text-section">
                         <h4>Our Mission</h4>
                         <p>These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
@@ -28,52 +34,41 @@ function Home() {
                 </section>
             </main>
 
-       {/* <section id="services" class="container">
-        <h2 class="display-4 text-center mt-5" >What We Do</h2>
-        
-        <div class="row text-center">
-           <div class="col-md-4 mb-4">
-              <div class="card h-100" data-aos="slide-up" data-aos-duration="1250">d
-                <img class="card-img-top" src="./home/austin.png" alt="Austin Fundraiser" />                 
-                <div class="card-body">
-                    <h4 class="card-title">Fundraisers</h4>
-                    <p class="card-text">We run various fundraisers throughout the year. By teaming with many youth groups and organizations, we are able to support those in need. </p>
-                 </div>
-                 <div class="card-footer py-4">
-                    <a href="/#" class="btn btn-secondary">See more &raquo;</a>
-                 </div>
-              </div>
-           </div>
-           
-           <div class="col-md-4 mb-4" data-aos="slide-up" data-aos-duration="1500">
-              <div class="card h-100">
-                 <img class="card-img-top" src="./home/maria-lin-kim-8RaUEd8zD-U-unsplash.jpg" alt="Grocery" />
-                 <div class="card-body">
-                    <h4 class="card-title">Grocery</h4>
-                       <p class="card-text">We know the pandemic has impacted many people. With help from many volunteers, we have been able to successfully deliver groceries all over the Bay Area.</p>
-                 </div>
-                 <div class="card-footer py-4">
-                    <a href="/#" class="btn btn-secondary">Volunteer &raquo;</a>
-                 </div>
-              </div>
-           </div>
-           
-           <div class="col-md-4 mb-4" data-aos="slide-up" data-aos-duration="1750">
-              <div class="card h-100">
-                 <img class="card-img-top" src="./home/donate.JPG" alt="Donatex" />
-                 <div class="card-body">
-                    <h4 class="card-title">Donate</h4>
-                    <p class="card-text">Donations go towards families that have been affected by the pandemic.</p>
-                 </div>
-                 <div class="card-footer py-4">
-                    <a href="/#" class="btn btn-secondary">Donate Now &raquo;</a>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
+        <section id="services">
+            <h2 className='services-header'>What We Do</h2>
 
-    <div>
+            <div className="service-list">
+                <ShowcaseCard 
+                    title="Fundraisers"
+                    description="We run various fundraisers throughout the year. By teaming with many youth groups and organizations, we are able to support those in need."
+                    image={AustinFlyer}
+                    imageAlt="Austin Fundraiser"
+                    buttonText="See more"
+                    buttonLink="/#"
+                />
+
+                <ShowcaseCard 
+                    title="Grocery"
+                    description="We know the pandemic has impacted many people. With help from many volunteers, we have been able to successfully deliver groceries all over the Bay Area."
+                    image={Grocery}
+                    imageAlt="Grocery"
+                    buttonText="See more"
+                    buttonLink="/#"
+                />
+
+                <ShowcaseCard 
+                    title="Donate"
+                    description="Donations go towards families that have been affected by the pandemic."
+                    image={Donate}
+                    imageAlt="Donate"
+                    buttonText="Donate Now"
+                    buttonLink="/#"
+                />
+            </div>
+            
+        </section>
+
+    {/* <div>
     <h2 class="text-center" >Some of our Previous Projects</h2>
      <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-5" data-ride="carousel" data-aos="slide-up" data-aos-duration="1750">
         <ol class="carousel-indicators">

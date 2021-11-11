@@ -5,7 +5,7 @@
     display: flex;
 }
 
-.intro {
+#intro {
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -16,45 +16,44 @@
     color: white;
 }
 
-.intro * {
+#intro * {
     margin: 0;
 }
 
-.intro h2 {
+#intro h2 {
     font-weight: 700;
     font-size: 4.5rem;
 }
 
-.intro hr {
+#intro hr {
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
     width: 100%;
     margin: 40px 0;
 }
 
-.intro h3 {
+#intro h3 {
     font-weight: 500;
     font-size: 1.75rem;
     margin-bottom: 0.2rem;
 }
 
-.intro h4 {
+#intro h4 {
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.mission {
+#mission {
     display: flex;
     width: 70%;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 .mission-text-section {
     flex-basis: 50%;
     margin: 20px;
-    color: #212529;
 }
 
 .mission-text-section h4 {
@@ -77,6 +76,25 @@
 .mission-img-wrapper img {
     width: 100%;
     flex-basis: 50%;
+}
+
+.services-header {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.service-list .showcase-card {
+    margin: 30px;
+    height: 650px;
 }
 
 .carousel {
