@@ -1,20 +1,21 @@
 import '../styles/showcaseCard.css'
+import { Card, Button } from 'react-bootstrap'
 
 function ShowcaseCard({title, description, image, imageAlt, buttonText, buttonLink}) {
     return (
-        <div className="showcase-card">
-            <div className='showcase-card-img-wrapper'>
-                <img className="showcase-card-img" src={image} alt={imageAlt}/>                 
+        <Card
+            className="showcase-card"
+        >
+            <Card.Img variant="top" src={image} alt={imageAlt} className='showcase-card-img'/>
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{description}</Card.Text>
+            </Card.Body>
+            <div className='showcase-card-button-container'>
+                <Button variant="secondary" className='showcase-card-button' href={buttonLink}>{buttonText} &raquo;</Button>
             </div>
-            <div className="showcase-card-body">
-                <h4 className="showcase-card-title">{title}</h4>
-                <p className="showcase-card-desc">{description}</p>
-            </div>
-            <div className="showcase-card-footer">
-                <a href={buttonLink} className="showcase-card-button">{buttonText} &raquo;</a>
-            </div>
-        </div>
-    )
+        </Card>
+)
 }
 
 export default ShowcaseCard;

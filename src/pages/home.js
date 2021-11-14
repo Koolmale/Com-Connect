@@ -6,6 +6,7 @@ import Grocery from '../images/grocery.jpg'
 import Donate from '../images/donate.jpg'
 
 import ShowcaseCard from '../components/showcaseCard'
+import { CardGroup } from 'react-bootstrap'
 
 function Home() {
     return (
@@ -37,7 +38,7 @@ function Home() {
         <section id="services">
             <h2 className='services-header'>What We Do</h2>
 
-            <div className="service-list">
+            <CardGroup className='service-list'>
                 <ShowcaseCard 
                     title="Fundraisers"
                     description="We run various fundraisers throughout the year. By teaming with many youth groups and organizations, we are able to support those in need."
@@ -64,7 +65,8 @@ function Home() {
                     buttonText="Donate Now"
                     buttonLink="/#"
                 />
-            </div>
+                
+            </CardGroup>
             
         </section>
 

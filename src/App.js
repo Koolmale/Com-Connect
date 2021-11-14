@@ -1,7 +1,8 @@
-import './App.css';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import routes from './routes';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import routes from './routes'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             </Switch>
         </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
