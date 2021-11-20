@@ -1,0 +1,37 @@
+footer {
+    display: block;
+    text-align: center;
+}
+
+.social-container {
+    background-color: #f1f1f1;
+}
+
+.social-button {
+    font-size: 40px;
+    color: #343a40;
+    display: inline-block;
+    margin: 30px 23px;
+    transition: all ease-in-out 150ms;
+}
+
+.social-button:hover {
+    color: #000000;
+}
+
+.copyright-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #343a40;
+}
+
+.copyright-container * {
+    display: inline-block;
+    margin: 17px 2px;
+    text-decoration: none;
+    color: #343a40;
+}
+
+.copyright-container a:hover {
+    color: #343a40;
+    text-decoration: underline;
+}
