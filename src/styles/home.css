@@ -78,13 +78,6 @@
     flex-basis: 50%;
 }
 
-.services-header {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-    text-align: center;
-}
-
 .service-list {
     width: 70%;
     margin: 0 auto;
@@ -94,11 +87,29 @@
     margin: 30px;
 }
 
+.home-carousel-container {
+    width: 50%;
+    margin: 30px auto;
+}
 
+.home-carousel-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
 
 @media only screen and (max-width: 1000px) {
     .service-list {
         width: 95%;
+    }
+
+    .home-carousel-container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .home-carousel-image {
+        height: 300px;
     }
 }
 
