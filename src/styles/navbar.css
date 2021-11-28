@@ -1,21 +1,20 @@
-nav {
+.nav-bar {
     padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #404483;
-    color: #fff;
+    color: white;
 
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-nav a {
+.nav-bar a {
     text-decoration: none;
-    color: #fff;
 }
 
 nav a:hover {
-    color: #fff;
+    color: white;
 }
 
 .nav-side {
@@ -36,6 +35,7 @@ nav a:hover {
 .nav-title {
     font-size: 1.5rem;
     font-weight: 500;
+    color: white;
 }
 
 .nav-item {
@@ -47,5 +47,52 @@ nav a:hover {
 }
 
 .nav-item:hover {
-    color: #fff;
+    color: white;
+}
+
+.nav-item:hover .nav-dropdown-arrow {
+    border-top: 7px solid white;
+}
+
+.nav-dropdown-arrow {
+    width: 0; 
+    height: 0;
+    transition: all ease-in-out 250ms;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgba(255,255,255,.5);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100px;
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+}
+
+.nav-dropdown a {
+    display: block;
+    margin: 5px auto;
+    padding: 3px 25%;
+    font-size: 2vh;
+    text-decoration: none;
+    color: #212529;
+}
+
+.nav-dropdown a:hover {
+    background-color: rgb(240, 240, 240);
+    color: #212529;
 }
