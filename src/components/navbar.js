@@ -8,7 +8,7 @@ function NavBar() {
         <nav>
             <div className='nav-side'>
                 <a href='/' className='nav-logo-container'>
-                    <img src={Logo}/>
+                    <img src={Logo} alt='logo'/>
                 </a>
                 <a href='/' className='nav-title'>Community Connector</a>
             </div>
