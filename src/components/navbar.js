@@ -1,5 +1,4 @@
 import '../styles/navbar.css'
-import 'animate.css'
 
 import Logo from '../images/logo.png'
 

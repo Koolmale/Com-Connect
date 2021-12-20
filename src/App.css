@@ -24,7 +24,7 @@ a {
     text-align: center;
     color: #212529;
     line-height: 1.5;
-    overflow-x: hidden;
+    overflow: hidden
 }
 
 .section-header {

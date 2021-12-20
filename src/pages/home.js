@@ -10,6 +10,7 @@ import Target from '../images/target.jpg'
 
 import ShowcaseCard from '../components/showcaseCard'
 import { CardGroup, Carousel } from 'react-bootstrap'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 function Home() {
     return (
@@ -28,89 +29,103 @@ function Home() {
             <main>
                 <section id="mission"> 
                     <div className="mission-text-section">
-                        <h4>Our Mission</h4>
-                        <p>These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
+                        <ScrollAnimation animateIn='animate__slideInUp' animateOnce={true}>
+                            <h4>Our Mission</h4>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn='animate__slideInUp' animateOnce={true}>
+                            <p>These are unprecedented times. We know that everyone wants to help, and many need help, but there's no one to connect them. With Community Connector, we will connect people in need of groceries with people who want to help. Just put what you need and we'll get it to you!</p>
+                        </ScrollAnimation>
                     </div>
                         
                     <div className="mission-img-wrapper">
-                        <img src={MakeAChange} alt=""  />
+                        <ScrollAnimation animateIn='animate__slideInUp' animateOnce={true}>
+                            <img src={MakeAChange} alt=""  />
+                        </ScrollAnimation>
                     </div>
                 </section>
             </main>
 
-            <section id="services">
-                <h2 className='section-header'>What We Do</h2>
+            <section id="services"> 
+                <ScrollAnimation animateIn='animate__slideInUp' animateOnce={true}>
+                    <h2 className='section-header'>What We Do</h2>
+                </ScrollAnimation>
 
-                <CardGroup className='service-list'>
-                    <ShowcaseCard 
-                        title="Fundraisers"
-                        description="We run various fundraisers throughout the year. By teaming with many youth groups and organizations, we are able to support those in need."
-                        image={AustinFlyer}
-                        imageAlt="Austin Fundraiser"
-                        buttonText="See more"
-                        buttonLink="/#"
-                    />
+                <ScrollAnimation animateIn='animate__slideInUp animate__slower' animateOnce={true}>
+                    <CardGroup className='service-list'>
+                        <ShowcaseCard 
+                            title="Fundraisers"
+                            description="We run various fundraisers throughout the year. By teaming with many youth groups and organizations, we are able to support those in need."
+                            image={AustinFlyer}
+                            imageAlt="Austin Fundraiser"
+                            buttonText="See more"
+                            buttonLink="/#"
+                        />
 
-                    <ShowcaseCard 
-                        title="Grocery"
-                        description="We know the pandemic has impacted many people. With help from many volunteers, we have been able to successfully deliver groceries all over the Bay Area."
-                        image={Grocery}
-                        imageAlt="Grocery"
-                        buttonText="See more"
-                        buttonLink="/#"
-                    />
+                        <ShowcaseCard 
+                            title="Grocery"
+                            description="We know the pandemic has impacted many people. With help from many volunteers, we have been able to successfully deliver groceries all over the Bay Area."
+                            image={Grocery}
+                            imageAlt="Grocery"
+                            buttonText="See more"
+                            buttonLink="/#"
+                        />
 
-                    <ShowcaseCard 
-                        title="Donate"
-                        description="Donations go towards families that have been affected by the pandemic."
-                        image={Donate}
-                        imageAlt="Donate"
-                        buttonText="Donate Now"
-                        buttonLink="/#"
-                    />
-                    
-                </CardGroup>
+                        <ShowcaseCard 
+                            title="Donate"
+                            description="Donations go towards families that have been affected by the pandemic."
+                            image={Donate}
+                            imageAlt="Donate"
+                            buttonText="Donate Now"
+                            buttonLink="/#"
+                        />
+                        
+                    </CardGroup>
+                </ScrollAnimation>
                 
             </section>
 
-            <h3 className='section-header-small'>Some of our Previous Projects</h3>
+            <ScrollAnimation animateIn='animate__slideInUp' animateOnce={true}>
+                <h3 className='section-header-small'>Some of our Previous Projects</h3>
+            </ScrollAnimation>
 
-            <div className='home-carousel-container'>
-                <Carousel classname='home-carousel'>
-                    <Carousel.Item>
-                        <img
-                            src={SriLanka}
-                            alt="Sri Lanka"
-                            className="home-carousel-image"
-                        />
-                        <Carousel.Caption>
-                            <h3>Care Package Campaign 2020</h3>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            src={CarePackage}
-                            alt="Care Package"
-                            className="home-carousel-image"
-                        />
+            <ScrollAnimation animateIn='animate__slideInUp' animateOnce={true}>
+                <div className='home-carousel-container'>
+                    <Carousel classname='home-carousel'>
+                        <Carousel.Item>
+                            <img
+                                src={SriLanka}
+                                alt="Sri Lanka"
+                                className="home-carousel-image"
+                            />
+                            <Carousel.Caption>
+                                <h3>Care Package Campaign 2020</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                src={CarePackage}
+                                alt="Care Package"
+                                className="home-carousel-image"
+                            />
 
-                        <Carousel.Caption>
-                            <h3>Care Package Campaign 2020</h3>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            src={Target}
-                            alt="Target Gift Cards"
-                            className="home-carousel-image"
-                        />
+                            <Carousel.Caption>
+                                <h3>Care Package Campaign 2020</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                src={Target}
+                                alt="Target Gift Cards"
+                                className="home-carousel-image"
+                            />
 
-                        <Carousel.Caption>
-                            <h3>Gift Card Fundraiser</h3>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </div>
+                            <Carousel.Caption>
+                                <h3>Gift Card Fundraiser</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+            </ScrollAnimation>
 
         </div>
     )
