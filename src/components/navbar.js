@@ -1,18 +1,40 @@
 import '../styles/navbar.css'
+import 'animate.css'
 
 import Logo from '../images/logo.png'
 
 import ClickOutside from './clickOutside.js'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 function NavBar() {
 
+    let [isVisible, setVisible] = useState(true);
+    let [scrollY, setScrollY] = useState(0);
     let [dropdown, setDropdown] = useState(false);
+
+    const handleScroll = () => {
+        
+        if (window.scrollY > scrollY) {
+            setVisible(false);
+        } else {
+            setVisible(true);
+        }
+        
+        setScrollY(window.scrollY);
+    }
+
+    useEffect(() => {
+        document.addEventListener('scroll', handleScroll)
+
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    })
 
     return (
         <nav>
-            <div className='nav-bar'>
+            <div className={`nav-bar animate__animated animate__faster ${isVisible ? 'animate__slideInDown' : ' animate__slideOutUp'}`}>
                 <div className='nav-side'>
                     <a href='/' className='nav-logo-container'>
                         <img src={Logo} alt='logo'/>
