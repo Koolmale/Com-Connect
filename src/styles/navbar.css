@@ -76,9 +76,10 @@ nav a:hover {
 }
 
 .nav-dropdown {
-    position: absolute;
+    position: fixed;
     display: block;
     right: 0;
+    top: 65px;
     width: 100px;
     list-style-type: none;
     padding: 0;

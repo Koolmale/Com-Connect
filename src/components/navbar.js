@@ -16,6 +16,7 @@ function NavBar() {
         
         if (window.scrollY > scrollY) {
             setVisible(false);
+            setDropdown(false);
         } else {
             setVisible(true);
         }
@@ -52,7 +53,7 @@ function NavBar() {
             </div>
             
             <ClickOutside onClick={() => setDropdown(false)}>
-                <ul className={`nav-dropdown ${dropdown ? '' : 'hidden'}`}>
+                <ul className={`nav-dropdown ${dropdown && isVisible ? '' : 'hidden'}`}>
                     <a href='/about'>About</a>
                     <a href='/team'>Team</a>
                     <a href='/contact'>Contact</a>
