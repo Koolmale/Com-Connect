@@ -1,5 +1,17 @@
-.nav-bar {
+nav {
     z-index: 100;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.nav-bar {
     padding: 8px 16px;
     width: 100%;
     display: flex;
@@ -8,15 +20,9 @@
     background-color: #404483;
     color: white;
 
-    position: fixed;
-    top: 0;
-
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-.nav-bar a {
-    text-decoration: none;
-}
 
 nav a:hover {
     color: white;
@@ -55,11 +61,11 @@ nav a:hover {
     color: white;
 }
 
-.nav-item:hover .nav-dropdown-arrow {
+.nav-item:hover .nav-about-dropdown-arrow {
     border-top: 7px solid white;
 }
 
-.nav-dropdown-arrow {
+.nav-about-dropdown-arrow {
     width: 0; 
     height: 0;
     transition: all ease-in-out 250ms;
@@ -70,16 +76,15 @@ nav a:hover {
     cursor: pointer;
 }
 
-.nav-dropdown-container {
+.nav-about-dropdown-container {
     display: flex;
     align-items: center;
 }
 
-.nav-dropdown {
-    position: fixed;
+.nav-about-dropdown {
+    position: absolute;
     display: block;
     right: 0;
-    top: 65px;
     width: 100px;
     list-style-type: none;
     padding: 0;
@@ -89,7 +94,7 @@ nav a:hover {
     border-radius: 4px;
 }
 
-.nav-dropdown a {
+.nav-about-dropdown a {
     display: block;
     margin: 5px auto;
     padding: 3px 25%;
@@ -98,7 +103,73 @@ nav a:hover {
     color: #212529;
 }
 
-.nav-dropdown a:hover {
+.nav-about-dropdown a:hover {
     background-color: rgb(240, 240, 240);
     color: #212529;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-bars {
+    color: rgba(255,255,255,.5);
+    font-size: 25px;
+    display: none;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    padding: 4px 12px;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-bars:hover {
+    background-color: rgba(255,255,255,.1);
+}
+
+.nav-mobile-dropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 720px) {
+    .nav-bars {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-mobile-dropdown {
+        display: block;
+    }
+    
+    .nav-about-dropdown-arrow {
+        display: inline-block;
+    }
+
+    .nav-about-dropdown-container {
+        display: inline-block;
+    }
+
+    .nav-links > * {
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 0 0 5px 5px;
+        flex-direction: column;
+        text-align: center;
+        background-color: #404483;
+    }
+
+    .nav-about-dropdown {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 210px;
+    }
 }
