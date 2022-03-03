@@ -1,5 +1,6 @@
 import Home from './pages/home'
 import Help from './pages/help'
+import About from './pages/about'
 
 function parseRoutes(routes, base_url = '') {
 	return routes
@@ -24,6 +25,10 @@ const routes = [
     {
         path: '/help',
         component: Help
+    },
+    {
+        path: '/about',
+        component: About
     }
 ]
 

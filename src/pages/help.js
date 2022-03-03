@@ -2,14 +2,12 @@ import '../styles/help.css'
 
 // import HelpImage from '../images/landing-help.jpg'
 
-import { CardGroup, Carousel } from 'react-bootstrap'
-import ScrollAnimation from 'react-animate-on-scroll'
 import React from "react";
 
 
 function HelpBottom() {
   return (
-		<>
+		<div className='body'>
 			<section style={{ boxSizing: 'border-box', display: 'block' }}>
 				<div
 					className='container text-center about-text'
@@ -419,7 +417,7 @@ function HelpBottom() {
 					</div>
 				</div>
 			</section>
-		</>
+		</div>
   )
 }
 

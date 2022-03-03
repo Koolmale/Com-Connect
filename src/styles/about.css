@@ -1,0 +1,57 @@
+.about-banner {
+    background: url("../images/retroOrangeArrow.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.about-banner-title {
+    font-size: 5.5rem;
+    color: white;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.about h3 {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 48px;
+}
+
+.about p {
+    line-height: 1.6;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about-section-container {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.about-section-container > * {
+    margin: 10px;
+}
+
+.about-section-container p {
+    flex-basis: 50%;
+}
+
+.about-section-img-wrapper {
+    flex-basis: 40%;
+    max-width: 400px;
+}
+
+.about-section-img-wrapper img {
+    width: 100%;
+    flex-basis: 50%;
+}
