@@ -42,7 +42,7 @@
     margin: 10px;
 }
 
-.about-section-container p {
+.about-section-paragraph {
     flex-basis: 50%;
 }
 
@@ -54,4 +54,52 @@
 .about-section-img-wrapper img {
     width: 100%;
     flex-basis: 50%;
+}
+
+.about .about-what-header {
+    font-size: 4rem;
+}
+
+.about-what-flex {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.about-what-flex > div {
+    flex-basis: 48%;
+}
+
+.about-what-flex p {
+    font-size: 1.25rem;
+}
+
+.about hr {
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 0 4px;
+}
+
+.about-conclusion {
+    margin: 48px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-section-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .about-section-container * {
+        flex-basis: auto;
+    }
+
+    .about-section-img-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-what-flex {
+        flex-direction: column;
+    }
 }
