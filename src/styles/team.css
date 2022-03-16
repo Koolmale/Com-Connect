@@ -1,0 +1,51 @@
+.team-banner {
+    background: url("../images/team.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.team-banner-title {
+    font-size: 5.5rem;
+    color: white;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.team-card {
+    margin-bottom: 20px;
+}
+
+.team-cardgroup {
+    margin: 20px auto;
+}
+
+.team-card-title {
+    line-height: 0.5;
+}
+
+.team-card-subtitle {
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 80%;
+    line-height: 0.5;
+}
+
+.team-person-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.team-card-social-link {
+    color: 007bff;
+    margin: 0 5px;
+}
