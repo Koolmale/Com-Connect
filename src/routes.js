@@ -2,6 +2,7 @@ import Home from './pages/home'
 import Help from './pages/help'
 import About from './pages/about'
 import Team from './pages/team'
+import Contact from './pages/contact'
 
 function parseRoutes(routes, base_url = '') {
 	return routes
@@ -34,6 +35,10 @@ const routes = [
     {
         path: '/team',
         component: Team
+    },
+    {
+        path: '/contact',
+        component: Contact
     }
 ]
 
