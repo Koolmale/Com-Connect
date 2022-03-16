@@ -1,6 +1,7 @@
 #App {
     display: flex;
     width: 100%;
+    min-height: 100vh;
     flex-direction: column;
 }
 
@@ -24,7 +25,7 @@ a {
     text-align: center;
     color: #212529;
     line-height: 1.5;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .section-header {
