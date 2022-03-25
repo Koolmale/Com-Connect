@@ -3,6 +3,7 @@ import Help from './pages/help'
 import About from './pages/about'
 import Team from './pages/team'
 import Contact from './pages/contact'
+import PastProjects from './pages/pastProjects'
 
 function parseRoutes(routes, base_url = '') {
 	return routes
@@ -39,6 +40,10 @@ const routes = [
     {
         path: '/contact',
         component: Contact
+    },
+    {
+        path: '/past_projects',
+        component: PastProjects
     }
 ]
 
