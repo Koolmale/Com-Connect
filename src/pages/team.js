@@ -90,7 +90,7 @@ function Team() {
                                     <Card.Title className='team-card-title'>Ali Rastegar</Card.Title>
                                     <span className='team-card-subtitle'>Co-director of technology</span>
                                     <Card.Text>
-                                        I like men
+                                        Ali Rastegar is the Co-Director of Technology, because he co-des everyday 😀
                                     </Card.Text>
                                     <a className='team-card-social-link' href='https://github.com/VolVox99'>
                                         <i className='fa fa-github' />
